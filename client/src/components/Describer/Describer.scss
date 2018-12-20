@@ -1,0 +1,14 @@
+.describer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: 'Zilla Slab', serif;
+  box-shadow: 3px solid yellow;
+  background: #eefa80;
+}
+@media (min-width: 600px){
+  .describer{
+    display: none;
+  }
+}
