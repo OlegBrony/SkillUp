@@ -1,0 +1,94 @@
+*{
+  box-sizing: border-box;
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(215deg, #55c1a5, #dde477);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 92%}
+      50%{background-position:100% 9%}
+      100%{background-position:0% 92%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 92%}
+      50%{background-position:100% 9%}
+      100%{background-position:0% 92%}
+  }
+  @keyframes AnimationName { 
+      0%{background-position:0% 92%}
+      50%{background-position:100% 9%}
+      100%{background-position:0% 92%}
+  }
+};
+
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 3vw;
+  margin-top: -10vh;
+  border-radius: 0.5vw;
+  box-shadow: 0px 0px 20px #87878b;
+  background: white;
+  font-family: Comfortaa-Regular;
+  &
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0.5vw;
+    margin-top: 2.5vh;
+    margin-left: 1vw;
+  }
+  .title{
+    margin-top: 2vh;
+    font-size: 1.5rem;
+  }
+  button{
+    border: 1px solid;
+    background: none;
+    padding: 0.7vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    margin-left: 1vw;
+    transition: 0.2s ease;
+    font-size: 1.2rem;
+    font-family: Comfortaa-Regular;
+    cursor: pointer;
+    &:hover{
+      color: white;
+      background: black;
+      transition: 0.2s ease;
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
+input{
+  width: 5vw;
+  padding: 0.6vw;
+  margin-left: 1vw;
+  font-size: 1.3em;
+  &:focus{
+    outline: none;
+  }
+}
+
+@font-face {
+  font-family: Comfortaa-Regular;
+  src: url("../../assets/fonts/Comfortaa-Regular.ttf");
+}
